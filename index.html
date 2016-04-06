@@ -7,7 +7,7 @@
 window.onload = function()
 {
 	var cam = new webCam({
-		vidObj:'videoEle', 
+		videoElement:'videoEle', 
 		videoContainer:'container', 
 		wideoWidth:400, 
 		videoHeight:300
@@ -36,9 +36,9 @@ function webCam(opt)
 {
 	
 	opt = opt || {};
-	if(typeof opt.videoID != 'undefined')
+	if(typeof opt.videoElement != 'undefined')
 	{
-		var videoElem = opt.videoID;
+		var videoElem = opt.videoElement;
 	}
 	else
 	{
